@@ -6,7 +6,10 @@ struct _complex {
 };
 
 typedef struct _complex Complex;
+void  ()
+{
 
+}
 void print_complex(Complex c);
 
 Complex complex_add(Complex c1, Complex c2);
