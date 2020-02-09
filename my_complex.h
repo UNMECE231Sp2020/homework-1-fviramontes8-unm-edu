@@ -8,13 +8,13 @@ struct _complex {
 
 typedef struct _complex Complex;
 
-void  ()
+void  fnc_Call_2_Complex(FNC PTR HERE ,Complex a, Complex b)
 {
-
+	printf("something about the function")
 }
 
 
-void print_function2(double, Complex **pointer)
+void fnc_Call_Double_Complex(double, Complex **pointer)
 {
 
 }
