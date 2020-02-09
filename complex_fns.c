@@ -43,8 +43,16 @@ Complex complex_mult(Complex c1, Complex c2) {
 
 Complex complex_div(Complex c1, Complex c2) {
 	double denom = magnitude(c2)*magnitude(c2);
+	if(denom == 0)
+	{
+		printf("Error: Attempt to divide by zero.\n");
+		return 1;
+	} else {
 	Complex c = complex_mult(c1, complex_conj(c2));
 	c.real /= denom;
 	c.imag /= denom;
 	return c;
+	}
 }
+
+
