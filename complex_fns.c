@@ -55,6 +55,6 @@ Complex complex_div(Complex c1, Complex c2) {
 	}
 }
 
-void complex_handler(void (*ptr)(),Complex c1, Complex c2){
-	(*ptr)();
+void complex_handler(void (*ptr)(Complex, Complex),Complex c1, Complex c2){
+	(*ptr)(c1,c2);
 }
