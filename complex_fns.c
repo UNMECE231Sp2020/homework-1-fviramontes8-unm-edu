@@ -61,3 +61,12 @@ void logic_handler(Complex (*ptr)(Complex, Complex),Complex c1, Complex c2){
 void complex_handler(Complex (*ptr)(Complex),Complex c1){
 	(*ptr)(c1);
 }
+
+void complex_call(Complex (*ptr)(Complex, Complex) ,Complex c1, Complex c2)
+{
+	print_complex(((*ptr)(c1,c2)));
+}
+void complex_call_dos(double (*ptr)(Complex), Complex c)
+{
+	printf("%lf",((*ptr)(c)));	
+}
