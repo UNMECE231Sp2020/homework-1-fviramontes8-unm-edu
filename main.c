@@ -13,13 +13,13 @@ int main() {
 
 	for(int i = 0; i<4; i++)
 	{
-		(*arr_ptr[i])(a, b);
+		complex_call((*arr_ptr[i]),a, b);
 	}
 	
 	for(int i = 0; i < 2; i++)
 	{
-		(*arr_ptr2[i])(a);
-		(*arr_ptr2[i])(b);
+		complex_call_dos((*arr_ptr2[i]),(a));
+		complex_call_dos((*arr_ptr2[i]),(b));
 	}
 
 	return 0;
